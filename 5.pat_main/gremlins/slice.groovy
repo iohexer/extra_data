@@ -52,7 +52,7 @@ def getSanitizeCalls(sanitize_list) {
 //--------------------------- forward slice --------------------
 /**
 *
-* find teh sink
+* find the sink
 *
 * @param sanitize_calls
 * @return path_list
@@ -438,7 +438,7 @@ def countReaches_source(String key_word, List sink_apis=[]) {
 	}
 	else
 	{
-		_stmts = g.V.filter{it.code == key_word}.parents().filter{it.type == 'AST_NAME'}.statements().filter{it.type != 'AST_IF'&&it.type != 'AST_SWITCH'&&it.type != 'AST_CONDITIONAL'&&it.type!='AST_RETURN'}.id; //拿到所有的source call
+		_stmts = g.V.filter{it.code == key_word}.parents().filter{it.type == 'AST_NAME'}.statements().filter{it.type != 'AST_IF'&&it.type != 'AST_SWITCH'&&it.type != 'AST_CONDITIONAL'&&it.type!='AST_RETURN'}.id; 
 	}
 
 	int _count = 0;

@@ -19,7 +19,6 @@ class xInfoer():
                       g.V.filter{ isFuncDecl(it) }.transform{ getFuncInfo(it) }
                   """
             self.func_info = gremlin.query(_ql)
-            # 写入人func_info
             with open('Info/func_info.json', 'w') as fh:
                 json.dump(self.func_info, fh)
 
