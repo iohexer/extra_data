@@ -5,3 +5,4 @@
 - 3. To justify the choice of threshold for the formula is reasonable, we use the linear, square, and cubic versions of the formula respectively. Then test the number of TPs in the top of the results ranking. The following figure shows the percentage of TP numbers in the top of the results using different formulas.
 ![](https://penlab-1252869057.cos.ap-beijing.myqcloud.com/2022-07-15-090053.png)
 - 4. A collection of user-defined sanitizers collected from popular real-world CMSs.
+- 5. The main code of PAT
